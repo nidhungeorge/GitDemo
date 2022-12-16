@@ -23,8 +23,8 @@ public TestBase()
 	{
 		prop=new Properties();
 		try {
-			FileInputStream inp=new FileInputStream("C:\\Users\\nidhu\\eclipse-workspace\\FreeCRMTest\\src\\main\\"
-					+"java\\com\\crm\\qa\\config\\config.properties");
+			FileInputStream inp=new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/crm"
+					+ "/qa/config/config.properties");
 			
 				prop.load(inp);
 			} catch (FileNotFoundException e) {
